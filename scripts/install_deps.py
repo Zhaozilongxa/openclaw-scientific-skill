@@ -68,7 +68,7 @@ def main():
                        help="Use pip instead of uv")
     args = parser.parse_args()
     
-    use_uv = not args.use_pic
+    use_uv = not args.use_pip
     
     if args.domain == "all":
         # Install core first

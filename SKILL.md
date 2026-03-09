@@ -10,7 +10,7 @@ description: |
 license: MIT
 metadata:
   version: "1.0.0"
-  author: "OpenClaw"
+  author: "Zhaozilongxa"
   domains: "bioinformatics,cheminformatics,clinical,ml,physics,engineering,visualization"
 ---
 
