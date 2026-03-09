@@ -39,6 +39,7 @@ jobs:
         env:
           UPSTREAM_REPO: K-Dense-AI/claude-scientific-skills
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCE_SYNC: ${{ github.event.inputs.force_sync }}
         run: |
           python3 << 'EOF'
           import requests
@@ -80,8 +81,6 @@ jobs:
           else:
               print("has_changes=false" >> $GITHUB_OUTPUT)
           EOF
-        env:
-          FORCE_SYNC: ${{ github.event.inputs.force_sync }}
 
       - name: Create sync task
         if: steps.check.outputs.has_changes == 'true'
