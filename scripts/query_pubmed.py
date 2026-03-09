@@ -12,8 +12,12 @@ from Bio import Entrez
 
 def search_pubmed(query, max_results=100, email=None):
     """Search PubMed for articles."""
+    # NCBI requires email for API access
     if email:
         Entrez.email = email
+    else:
+        Entrez.email = "your_email@example.com"
+        print("⚠️  Warning: Using placeholder email. Set --email for production use.")
     
     handle = Entrez.esearch(
         db="pubmed",

@@ -186,6 +186,9 @@ structure = parser.get_structure("EGFR", "EGFR.pdb")
 - `scripts/query_pubmed.py` — PubMed search utility
 - `scripts/fetch_alphafold.py` — AlphaFold structure downloader
 - `scripts/vcf_annotate.py` — VCF annotation workflow
+- `scripts/sync_upstream.py` — Sync with upstream Claude Scientific Skills
+- `scripts/trigger_sync.sh` — Trigger sync via OpenClaw subagent
+- `scripts/daily_check.sh` — Daily automated update check (Beijing 08:00)
 
 ## Best Practices
 
