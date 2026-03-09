@@ -221,7 +221,9 @@ MIT License - Free for academic and commercial use.
 
 ## 🙏 Acknowledgments
 
-Inspired by [Claude Scientific Skills](https://github.com/K-Dense-AI/claude-scientific-skills) by K-Dense.
+**Inspired by** [Claude Scientific Skills](https://github.com/K-Dense-AI/claude-scientific-skills) by K-Dense.
+
+This is an **independent implementation** with original code examples. See [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md) for details.
 
 Built on amazing open-source projects:
 - [BioPython](https://biopython.org/)
